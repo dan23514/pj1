@@ -1,0 +1,23 @@
+# ===== データ・大きな出力（git に入れない。RESEARCH_DATA 側／サーバーに置く） =====
+*.nc
+*.npz
+*.csv
+*.zarr/
+
+# ===== 図: 基本は無視。ただし最終図は results/ 配下だけ追跡する =====
+*.png
+*.pdf
+!results/*.png
+!results/**/*.png
+!results/*.pdf
+!results/**/*.pdf
+
+# ===== スクラッチ・その他 =====
+*.txt
+*.sh
+.ipynb_checkpoints
+__pycache__/
+*.pyc
+.venv/
+
+# 注: コード(*.py)・Markdown(*.md) は追跡する。
