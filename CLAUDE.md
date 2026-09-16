@@ -4,9 +4,12 @@
 
 # pj1 Repository — Claude Code Instructions
 
-このリポジトリは **pj1 プロジェクト**（<テーマを記入>）のコード＋研究コンテキスト。
+このリポジトリは **pj1 プロジェクト＝黒潮を対象とした SWOT 波–風–流れ相互作用研究（Plan A / 第1段階）** のコード＋研究コンテキスト。
 ローカル(このPC)・研究室デスクトップ(atomic)・研究室サーバー(bada) が git で同期して作業する。
-> プロジェクト名・テーマが確定したら、この行と `research/PROGRESS.md`・`research/KNOWLEDGE.md` の Project Definition を更新する。
+- **主要変数**: wind speed（風速）／ significant wave height（有義波高 Hs）／ sea surface level（海面高度 SSH→地衡流）／ current speed（流速）
+- **領域**: 黒潮南日本域（130–142°E, 28–36°N；トカラ〜伊豆）
+- **データ**: SWOT（L2 LR WindWave / L3 SSH。一部 bada に配置）＋ 再解析（ERA5・JCOPE）＋ 衛星（CFOSAT）＋ 現場（NOWPHAS・沖縄ブイ）
+- テーマ・問い・計画の詳細は `research/KNOWLEDGE.md`／`research/PROGRESS.md`、全体計画は Obsidian の研究プラン（`Research/Projects/pj1/`）を参照。
 
 ## このリポジトリの構成
 - `research/` — 研究コンテキスト（進捗・知見・ログ・解析記録・技術メモ）
