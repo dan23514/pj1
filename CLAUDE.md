@@ -7,7 +7,7 @@
 このリポジトリは **pj1 プロジェクト＝黒潮を対象とした SWOT 波–風–流れ相互作用研究（Plan A / 第1段階）** のコード＋研究コンテキスト。
 ローカル(このPC)・研究室デスクトップ(atomic)・研究室サーバー(bada) が git で同期して作業する。
 - **主要変数**: wind speed（風速）／ significant wave height（有義波高 Hs）／ sea surface level（海面高度 SSH→地衡流）／ current speed（流速）
-- **領域**: 黒潮南日本域（130–142°E, 28–36°N；トカラ〜伊豆）
+- **領域**: 黒潮域（トカラ〜伊豆の南日本域を中心に検討中。具体的な範囲は未確定）
 - **データ**: SWOT（L2 LR WindWave / L3 SSH。一部 bada に配置）＋ 再解析（ERA5・JCOPE）＋ 衛星（CFOSAT）＋ 現場（NOWPHAS・沖縄ブイ）
 - テーマ・問い・計画の詳細は `research/KNOWLEDGE.md`／`research/PROGRESS.md`、全体計画は Obsidian の研究プラン（`Research/Projects/pj1/`）を参照。
 
@@ -24,7 +24,7 @@
 - 参照は環境変数 **`RESEARCH_DATA`** をベースにする（マシンごとに設定）:
   - ローカル: `C:\Users\tkm14\data`
   - bada: `/export/bada1/seolab/Data`
-  - atomic: <未定>
+  - atomic: `/home/takamio/Data`（`export RESEARCH_DATA=/home/takamio/Data` を `~/.bashrc` に追記）
   ```python
   import os; from pathlib import Path
   BASE = Path(os.environ["RESEARCH_DATA"])

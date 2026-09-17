@@ -7,7 +7,7 @@
 
 ## Project Definition
 - **テーマ**: 黒潮を対象とした SWOT 波–風–流れ相互作用研究。Plan A（第1段階）＝南日本黒潮の Hs 勾配の2D統計と、大蛇行(LM 2023–2025/4)/非大蛇行(NLM 2025/5–)の比較。
-- **領域**: 黒潮南日本域（130–142°E, 28–36°N；トカラ〜伊豆）
+- **領域**: 黒潮域（トカラ〜伊豆の南日本域を中心に検討中。具体的な範囲は未確定。続流域を含めるかも検討中）
 - **主要変数**: wind speed（風速）, significant wave height（有義波高 Hs）, sea surface level（海面高度 SSH→地衡流）, current speed（流速）
 - **データ**: SWOT（L2 LR WindWave / L3 SSH。一部 bada 配置）、再解析（ERA5 風・SLP、JCOPE2M / JCOPE-T DA 流れ）、衛星（CFOSAT SWIM）、現場（NOWPHAS、沖縄ブイ航海 2026-09-24〜10-11）
 - **手法**: 全パス・スクリーニング → 風寄与の除去（U10–Hs 回帰残差 Hs' ／ WW3 CTRL）→ 流軸直交座標コンポジット（距離×相対角×季節×LM/NLM）。SWOT SSH から地衡流（9×9画素 平面フィット、Qiu & Chen の denoising/subcycle に倣う）
