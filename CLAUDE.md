@@ -18,13 +18,14 @@
 ## 実行環境
 - **ローカル**: uv製の共有環境 `C:\Users\tkm14\envs\py312`（Python 3.12）。`activatepy312` で有効化してから `python ...`。
 - **サーバー(bada/atomic)**: 各サーバーの py312 環境を有効化してから実行（システムpythonは使わない）。
+  - atomic: Miniforge(conda-forge) の `~/envs/py312`（= `/home/akule/takamio/envs/py312`）。`activatepy312`（= `conda activate ~/envs/py312`）で有効化。
 
 ## データの場所（重要・repoには入れない）
 - データ(`.nc`/`.npz`/`.csv` 等)は git に入れない。`.gitignore` で除外済み。
 - 参照は環境変数 **`RESEARCH_DATA`** をベースにする（マシンごとに設定）:
   - ローカル: `C:\Users\tkm14\data`
   - bada: `/export/bada1/seolab/Data`
-  - atomic: `/home/takamio/Data`（`export RESEARCH_DATA=/home/takamio/Data` を `~/.bashrc` に追記）
+  - atomic: `/data4`（外付けマウント。`export RESEARCH_DATA=/data4` を `~/.bashrc` に追記。ホームは `/home/akule/takamio`）
   ```python
   import os; from pathlib import Path
   BASE = Path(os.environ["RESEARCH_DATA"])
